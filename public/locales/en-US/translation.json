@@ -1,0 +1,10 @@
+{
+    "formLabel": {
+        "name": "Name",
+        "age": "Age",
+        "address": "Adress"
+    },
+    "header":{
+        "welcome":"Welcome"
+    }
+}
