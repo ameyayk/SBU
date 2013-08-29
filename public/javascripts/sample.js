@@ -1,5 +1,26 @@
 angular.module("Supplier",{})
 angular.module('Supplier',['ui.bootstrap','jm.i18next']);
+
+//code below this is to gtry differenet things out.Upwards is the real deal
+
+//angular.module('Supplier', ['ui.bootstrap']);
+function AlertDemoCtrl($scope) {
+    $scope.alerts = [
+        { type: 'error', msg: 'Oh snap! Change a few things up and try submitting again.' },
+        { type: 'success', msg: 'Well done! You successfully read this important alert message.' }
+    ];
+
+    $scope.addAlert = function() {
+        $scope.alerts.push({msg: "Another alert!"});
+    };
+
+    $scope.closeAlert = function(index) {
+        $scope.alerts.splice(index, 1);
+    };
+
+}
+
+
 angular.module('jm.i18next').config(function ($i18nextProvider) {
 
     $i18nextProvider.options = {
@@ -10,10 +31,10 @@ angular.module('jm.i18next').config(function ($i18nextProvider) {
 
 });
 
-angular.module('Supplier', ['jm.i18next']).controller('LanguageController', function ($rootScope, $scope, $timeout, $i18next) {
+angular.module('Supplier').controller('LanguageController', function ($rootScope, $scope, $timeout, $i18next) {
 
     $scope.changeLanguage = function (lng) {
-         $i18next.options.lng = lng;
+        $i18next.options.lng = lng;
     };
     //have a static data set of locales defined.Might have to populate it from the Backend
     $scope.languages=   [
@@ -26,18 +47,10 @@ angular.module('Supplier', ['jm.i18next']).controller('LanguageController', func
 
     //handle the language switch
     $scope.languageChanged=function(){
-       $scope.changeLanguage(($scope.language));
+        $scope.changeLanguage(($scope.language));
     }
 
 });
-
-
-function FormController($scope) {
-
-}
-
-//code below this is to gtry differenet things out.Upwards is the real deal
-
 
 
 var TabsDemoCtrl = function ($scope) {
@@ -54,22 +67,3 @@ var TabsDemoCtrl = function ($scope) {
 
     $scope.navType = '';
 };
-
-//angular.module('Supplier', ['ui.bootstrap']);
-/*
-function AlertDemoCtrl($scope) {
-    $scope.alerts = [
-        { type: 'error', msg: 'Oh snap! Change a few things up and try submitting again.' },
-        { type: 'success', msg: 'Well done! You successfully read this important alert message.' }
-    ];
-
-    $scope.addAlert = function() {
-        $scope.alerts.push({msg: "Another alert!"});
-    };
-
-    $scope.closeAlert = function(index) {
-        $scope.alerts.splice(index, 1);
-    };
-
-}
-  */

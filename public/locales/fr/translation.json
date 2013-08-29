@@ -4,6 +4,9 @@
         "age": "époque",
         "address": "Adresse"
     } ,
+    "formHeading":{
+        "yourDetails":"Yvos coordonnées"
+    },
     "header":{
         "welcome":"Bienvenue au marché XYZ où les acheteurs se rencontrent vendeurs.<br>S'il vous plaît inscrivez votre organistaion de le mettre sur notre carte"
     }
