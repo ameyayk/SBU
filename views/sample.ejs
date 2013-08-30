@@ -9,6 +9,7 @@
     <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../stylesheets/style.css" rel="stylesheet" media="screen">
     <script src="http://code.angularjs.org/1.2.0rc1/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
     <script src="../lib/i18next-1.6.3.min.js"></script>
     <script src="../lib/ng-i18next.min.js"></script>
     <script src="../javascripts/supplier.js"></script>
@@ -22,6 +23,7 @@
 
     <!-- Le styles -->
     <link href="../stylesheets/style.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.js"></script>
@@ -63,12 +65,30 @@
     </div>
 
 
-        <ul class="nav nav-tabs">
-            <li><a href="#home" data-toggle="tab">Home</a></li>
-            <li><a href="#profile" data-toggle="tab">Profile</a></li>
-            <li><a href="#messages" data-toggle="tab">Messages</a></li>
-            <li><a href="#settings" data-toggle="tab">Settings</a></li>
-        </ul>
+        <form id="registration-form" class="form-horizontal" novalidate ng-submit="submitForm();">
+
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#1" data-toggle="tab">Tab1</a>
+                    </li>
+                    <li>
+                        <a href="#2" data-toggle="tab">Tab2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="1">
+                        ...
+                    </div>
+                    <div class="tab-pane" id="2">
+                        <!-- form controls to be continued here -->
+                        <p>Howdy, I'm in Section 2.</p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
 
     <div class="footer">
         <p>&copy; Company 2013</p>
