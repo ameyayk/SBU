@@ -4,8 +4,13 @@
         "age": "Alter",
         "address": "Adressieren"
     },
-    "formHeading":{
-      "yourDetails":"Ihre Angaben"
+    "formheader":{
+            "title":{
+              "1":"Contact Info",
+              "2":"Company Info",
+              "3":"Business Details",
+              "4":"Services Details"
+            }
     },
     "header":{
         "welcome":"Willkommen auf XYZ Markt, wo Käufer Verkäufer treffen<br>Bitte registrieren Sie Ihr organistaion es auf unserer Karte setzen"

@@ -4,10 +4,15 @@
         "age": "époque",
         "address": "Adresse"
     } ,
-    "formHeading":{
-        "yourDetails":"Yvos coordonnées"
+    "formheader":{
+    "title":{
+        "1":"Contact Info",
+        "2":"Company Info",
+        "3":"Business Details",
+        "4":"Services Details"
+      }
     },
-    "header":{
+"header":{
         "welcome":"Bienvenue au marché XYZ où les acheteurs se rencontrent vendeurs.<br>S'il vous plaît inscrivez votre organistaion de le mettre sur notre carte"
     }
 }

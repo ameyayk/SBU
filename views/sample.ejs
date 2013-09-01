@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>-->
+    <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link href="../stylesheets/style.css" rel="stylesheet" media="screen">
@@ -52,17 +54,20 @@
         </div><!-- /.navbar-wrapper -->
 
   <div class="content">
-    <div class=jumbotron>
+    <div class="jumbotron">
 
          <legend><h4 ng-i18next="[html]header.welcome"></h4></legend>
 
           </div>
         <!--tabs-->
-        <div ng-controller="TabsDemoCtrl">
-            <form name="campaignForm" class="form-horizontal" novalidate >
-                <tabset>
-                    <tab heading="first">
-                        <div ng-form="emailForm">
+
+      <form name="supplierRegistrationForm" class="form-horizontal" novalidate ng-controller="FormController">
+              <div>
+                <tabset class="nav nav-pills">
+                    <tab heading="1" >
+                        <legend><h4 ng-i18next="[html]formheader.title.1"></h4></legend>
+                        <div ng-form="contact-info-form" ng-controller="contactInfoController" class="well form-horizontal pull-left">
+
                             <div class="control-group">
                                 <label class="control-label" ng-i18next="formLabel.name"></label>
 
@@ -95,27 +100,66 @@
                                     <input name="name" type="text" value="" id="name1" ng-model="userType" required>
                                 </div>
                             </div>
-
-
                         </div>
+                       <!-- <button ng-click="toggleState()" >Toggle</button>-->
                     </tab>
 
-                    <tab heading="second">
-                        <div ng-form="company-details-form">
+                    <tab heading="2">
+                        <legend><h4 ng-i18next="[html]formheader.title.2"></h4></legend>
+                        <div ng-form="company-info-form"  ng-controller="companyInfoController" class="pull-left">
+
                             <div class="control-group">
                                 <label class="control-label" ng-i18next="formLabel.age"></label>
-
-                                <div class="controls">
-                                    <input name="age" type="text" value="" id="age1">
+                                        <div class="controls">
+                                    <input name="companyId" type="text" value="" id="companyid">
                                 </div>
                             </div>
 
                         </div>
+                  <!--      <button ng-click="toggleState2()" >Toggle</button>-->
                     </tab>
-                </tabset>
-            </form>
-        </div>
 
+                     <tab heading="3">
+
+                       <legend><h4 ng-i18next="[html]formheader.title.3"></h4></legend>
+
+                       <div ng-form="business-details-form" ng-controller="businessDetailController" class="pull-left">
+                           <div class="control-group">
+                               <label class="control-label" ng-i18next="formLabel.age"></label>
+
+                               <div class="controls">
+                                   <input name="serviceList" type="text" value="" id="serviceLists">
+                               </div>
+                           </div>
+
+                       </div>
+                   </tab>
+
+
+                   <tab heading="4">
+
+                       <legend><h4 ng-i18next="[html]formheader.title.4"></h4></legend>
+                       <div ng-form="services-details-form" ng-controller="serviceDetailContoller" class="pull-left">
+
+                           <div class="control-group">
+                               <label class="control-label" ng-i18next="formLabel.age"></label>
+
+                               <div class="controls">
+                                   <input name="age" type="text" value="" id="age1">
+                               </div>
+                           </div>
+                       </div>
+
+
+                    </tab>
+
+                </tabset>
+
+        </div>
+          <div  class ="btn btn-primary">
+          <button ng-model="isDisabled"  ng-disabled="!isDisabled" ng-click="register()">Register</button>
+          </div>
+      </form>
 
 
             </div>

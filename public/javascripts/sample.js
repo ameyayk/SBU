@@ -52,7 +52,7 @@ angular.module('Supplier').controller('LanguageController', function ($rootScope
 
 });
 
-
+/*
 var TabsDemoCtrl = function ($scope) {
     $scope.tabs = [
         { title:"Dynamic Title 1", content:"Dynamic content 1" },
@@ -67,3 +67,61 @@ var TabsDemoCtrl = function ($scope) {
 
     $scope.navType = '';
 };
+               */
+
+var FormController=function($scope){
+
+    $scope.contactInfoController=function($scope){
+        $scope.usage="scope bound to yourDetailsController";
+        $scope.contactInfoValid=true;
+        //use this method to validate the contactInfotab
+    }
+    $scope.companyInfoController=function($scope){
+        //use this method to validate the contactInfotab
+        $scope.usage="scope bound to companyInfoController";
+        $scope.companyInfoValid=true;
+
+    }
+
+    $scope.businessDetailController=function($scope){
+        //use this method to validate the contactInfotab
+        $scope.usage="bound to business Details controller";
+        $scope.businessDetailsValid=true;
+    }
+
+    $scope.serviceDetailContoller=function($scope){
+        //use this method to validate the contactInfotab
+        $scope.usage="bound to business Details controller";
+        $scope.serviceDetailsValid=true;
+    }
+
+    $scope.toggleState=function(){
+
+         $scope.contactInfoValid=!$scope.contactInfoValid;
+    }
+
+    $scope.toggleState2=function(){
+
+        $scope.companyInfoValid=!$scope.companyInfoValid;
+    }
+
+
+
+
+    $scope.register=function(){
+        //stub to make persist the data to the server
+        alert('clcik');
+    }
+
+    //model to toggle th form submit button
+    $scope.isDisabled=false;
+
+    //method to watch if each of the sub form are passing in the validity
+    $scope.$watchCollection('[contactInfoValid,companyInfoValid,businessDetailsValid,serviceDetailsValid]', function(newValues) {
+    var flag=true;
+        for(var i=0;i<newValues.length;i++){
+               flag=flag && newValues[i];
+        }
+        $scope.isDisabled=flag;
+    });
+}
