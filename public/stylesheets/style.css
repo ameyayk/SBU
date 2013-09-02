@@ -1,7 +1,10 @@
 body {
     padding-bottom: 40px;
-    background-color: #f5f5ff;
+    background-color: #ffffbf;
+}
 
+.body-wrap {
+      background-color: #ffffff;
 }
 
 
@@ -41,6 +44,11 @@ body {
 .navbar .btn-navbar {
     margin-top: 10px;
     background-color: #ffffff;
+    max-width: 100px;
+}
+.navbar .navbar-inverse{
+
+
 }
 
 .container-narrow {
@@ -63,6 +71,22 @@ body {
     padding-left: 10px;
     margin-left:10px ;
     margin-right: 10px;
+    height:700px;
+
+}
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+.registerBtn{
+    text-align:center;
+
 }
 .jumbotron {
     padding-top: 20px;
@@ -85,6 +109,8 @@ body {
     font-size: 21px;
     padding: 14px 24px;
 }
+
+
 
 /* Supporting marketing content */
 .marketing {

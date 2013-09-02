@@ -1,19 +1,19 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html ng-app="Supplier">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>-->
+    <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link href="../stylesheets/style.css" rel="stylesheet" media="screen">
-    <script src="http://code.angularjs.org/1.2.0rc1/angular.min.js"></script>
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
     <script src="../lib/i18next-1.6.3.min.js"></script>
     <script src="../lib/ng-i18next.min.js"></script>
-    <script src="../javascripts/supplier.js"></script>
-
+    <script src="../javascripts/sample.js"></script>
     <meta charset="utf-8">
 
     <title>Template &middot; Bootstrap</title>
@@ -36,72 +36,145 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
 </head>
-
 <body>
+
 <div class="body-wrap">
-<div class="container-narrow">
+    <div class="container-narrow">
 
-    <!-- NAVBAR
- ================================================== -->
-    <div class="navbar-wrapper">
-        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-        <div class="container">
-            <div class="navbar navbar-inverse">
-                <div class="pull-right">
-                     <div class="nav-collapse collapse">
+        <div class="navbar-wrapper">
+            <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+            <div class="container">
+                <div class="navbar navbar-inverse">
+                    <div class="pull-right">
+                        <div class="nav-collapse collapse">
                             <div ng-controller="LanguageController"><select class="languageDropDown"   ng-change="languageChanged()" ng-model="language" ng-options="item.id as item.name for item in languages"></select></div>
-                    </div><!--/.nav-collapse -->
-                </div><!-- /.navbar-inner -->
-            </div><!-- /.navbar -->
-         </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
+                        </div><!--/.nav-collapse -->
+                    </div><!-- /.navbar-inner -->
+                </div><!-- /.navbar -->
+            </div> <!-- /.container -->
+        </div><!-- /.navbar-wrapper -->
+
+  <div class="content">
+    <div class="jumbotron">
+
+         <legend><h4 ng-i18next="[html]header.welcome"></h4></legend>
+
+          </div>
+        <!--tabs-->
+         <div class="formClass" >
+         <form name="supplierRegistrationForm" class="form-horizontal" novalidate ng-controller="FormController">
+              <div>
+                <tabset class="nav nav-tabs">
+                    <tab heading="1" >
+                        <legend><h4 ng-i18next="[html]formheader.title.1"></h4></legend>
+                        <div ng-form="contact-info-form" ng-controller="contactInfoController" class="pull-left">
+
+                            <div class="control-group">
+                                <label class="control-label" ng-i18next="formLabel.name"></label>
+
+                                <div class="controls">
+                                    <input name="name" type="text" value="" id="name" ng-model="userType" required>
+                                </div>
+                            </div>
 
 
+                            <div class="control-group">
+                                <label class="control-label" ng-i18next="formLabel.age"></label>
+
+                                <div class="controls">
+                                    <input name="age" type="text" value="" id="age">
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label  class="control-label" ng-i18next="formLabel.address"></label>
+
+                                <div class="controls">
+                                    <input name="address" type="text" value="" id="address">
+                                </div>
+                            </div>
+                            <legent></legent>
+                            <div class="control-group">
+                                <label class="control-label" ng-i18next="formLabel.name"></label>
+
+                                <div class="controls">
+                                    <input name="name" type="text" value="" id="name1" ng-model="userType" required>
+                                </div>
+                            </div>
+                        </div>
+                       <!-- <button ng-click="toggleState()" >Toggle</button>-->
+                    </tab>
+
+                    <tab heading="2">
+                        <legend><h4 ng-i18next="[html]formheader.title.2"></h4></legend>
+                        <div ng-form="companyInfoForm"  ng-controller="companyInfoController" class="pull-left">
+
+                            <div class="control-group" ng-class="{error: companyInfoForm.companyId.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.age"></label>
+                                        <div class="controls">
+                                    <input name="companyId" ng-minlength="5"  type="text" value=""  ng-model="companyInfo.companyId" id="companyId" required>
+                                             <span ng-show="companyInfoForm.companyId.$error.required" class="help-inline">
+                                Required</span>
+                               <span ng-show="companyInfoForm.companyId.$error.minlength" class="help-inline">
+                                   Too Short </span>
+                                </div>
+                            </div>
+
+                        </div>
+                  <!--      <button ng-click="toggleState2()" >Toggle</button>-->
+                    </tab>
+
+                     <tab heading="3">
+
+                       <legend><h4 ng-i18next="[html]formheader.title.3"></h4></legend>
+
+                       <div ng-form="businessDetailsForm" ng-controller="businessDetailController" class="pull-left">
+                           <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                               <label class="control-label" ng-i18next="formLabel.age"></label>
+                               <div class="controls">
+                               <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                </div>
+                          </div>
+                       </div>
+                   </tab>
 
 
-    <div class="content">
-    <div class=jumbotron>
-              <legend><h4 ng-i18next="[html]header.welcome"></h4></legend>
-    </div>
+                   <tab heading="4">
+
+                       <legend><h4 ng-i18next="[html]formheader.title.4"></h4></legend>
+                       <div ng-form="serviceDetailsForm" ng-controller="serviceDetailContoller" class="pull-left">
+
+                           <div class="control-group" ng-class="{error: serviceDetailsForm.serviceId.$invalid}">
+                               <label class="control-label" ng-i18next="formLabel.age"></label>
+                               <div class="controls">
+                                   <input type="text" name="serviceId"  ng-minlength="3" ng-model="serviceDetails.serviceId" required >
+                                <span ng-show="serviceDetailsForm.serviceId.$error.required" class="help-inline">
+                                Required</span>
+                               <span ng-show="serviceDetailsForm.serviceId.$error.minlength" class="help-inline">
+                                   Too Short </span>
+                               </div>
+                           </div>
+                       </div>
 
 
-        <form id="registration-form" class="form-horizontal" novalidate ng-submit="submitForm();">
+                    </tab>
 
-            <div class="tabbable">
-                <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a href="#1" data-toggle="tab">Tab1</a>
-                    </li>
-                    <li>
-                        <a href="#2" data-toggle="tab">Tab2</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane" id="1">
-                        ...
-                    </div>
-                    <div class="tab-pane" id="2">
-                        <!-- form controls to be continued here -->
-                        <p>Howdy, I'm in Section 2.</p>
-                    </div>
+                </tabset>
+
+              </div>
+                <div  class ="registerBtn">
+                <button ng-model="isDisabled"  ng-disabled="!isDisabled" ng-click="register()" class="btn btnPrimary">Register</button>
                 </div>
+            </form>
+
+
             </div>
-
-        </form>
-
-
-    <div class="footer">
-        <p>&copy; Company 2013</p>
-    </div>
-
-</div> <!-- /container -->
-</div>
-</div>
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="../javascripts/bootstrap.min.js"></script>
-
+        </div>
+       </div>
+  </div>
 </body>
 </html>
