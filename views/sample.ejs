@@ -158,18 +158,110 @@
                         <legend><h4 ng-i18next="[html]formheader.title.2"></h4></legend>
                         <div ng-form="companyInfoForm"  ng-controller="companyInfoController" class="pull-left">
 
-                            <div class="control-group" ng-class="{error: companyInfoForm.companyId.$invalid}">
-                                <label class="control-label" ng-i18next="formLabel.age"></label>
-                                        <div class="controls">
-                                    <input name="companyId" ng-minlength="5"  type="text" value=""  ng-model="companyInfo.companyId" id="companyId" required>
-                                             <span ng-show="companyInfoForm.companyId.$error.required" class="help-inline">
-                                Required</span>
-                               <span ng-show="companyInfoForm.companyId.$error.minlength" class="help-inline">
-                                   Too Short </span>
+                            <div class="control-group" ng-class="{error: contactInfoForm.firstName.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.firstName"></label>
+
+                                <div class="controls">
+                                    <input name="firstName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.firstName" id="firstName" required>
+                                     <span ng-show="contactInfoForm.firstName.$error.required" class="help-inline">
+                                        Required</span>
+                                     <span ng-show="contactInfoForm.firstName.$error.maxlength" class="help-inline">
+                                        Too Long </span>
+                                </div>
+                            </div>
+
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.lastName.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.lastName"></label>
+                                <div class="controls">
+                                    <input name="lastName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.lastName" id="lastName" required>
+                                    <span ng-show="contactInfoForm.lastName.$error.required" class="help-inline">
+                                        Required</span>
+                                    <span ng-show="contactInfoForm.lastName.$error.maxlength" class="help-inline">
+                                        Too Long </span>
+                                </div>
+                            </div>
+
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.contactNumber.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.contactNumber"></label>
+                                <div class="controls">
+                                    <input name="contactNumber"   type="text" value=""  ng-model="contactInfoForm.poc.contactNumber" id="contactNumber" required>
+                                  <span ng-show="contactInfoForm.contactNumber.$error.required" class="help-inline">
+                              Required</span>
+                                </div>
+                            </div>
+
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.mobileNumber.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.mobileNumber"></label>
+                                <div class="controls">
+                                    <input name="mobileNumber" ng-minlength="5"  type="text" value=""  ng-model="contactInfoForm.poc.mobileNumber" id="mobileNumber" required>
+                                           <span ng-show="contactInfoForm.mobileNumber.$error.required" class="help-inline">
+                              Required</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.emailId.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.emailId"></label>
+                                <div class="controls">
+                                    <input name="emailId" ng-minlength="5"  type="email" value=""  ng-model="contactInfoForm.poc.emailId" id="emailId" required>
+                                           <span ng-show="contactInfoForm.emailId.$error.required" class="help-inline">
+                                          Required</span>
+                                </div>
+                            </div>
+
+
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.companyName.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.companyName"></label>
+                                <div class="controls">
+                                    <input name="companyName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.companyName" id="companyName" required>
+                                       <span ng-show="contactInfoForm.companyName.$error.required" class="help-inline">
+                                         Required</span>
+                                       <span ng-show="contactInfoForm.companyName.$error.maxlength" class="help-inline">
+                                          Too Long </span>
+                                </div>
+                            </div>
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.jobTitle.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.jobTitle"></label>
+                                <div class="controls">
+                                    <input name="jobTitle" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.jobTitle" id="jobTitle" required>
+                                      <span ng-show="contactInfoForm.jobTitle.$error.required" class="help-inline">
+                                      Required</span>
+                                      <span ng-show="contactInfoForm.jobTitle.$error.minlength" class="help-inline">
+                                      Too Short </span>
+                                </div>
+                            </div>
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.companyName.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.companyName"></label>
+                                <div class="controls">
+                                    <input name="companyName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.companyName" id="companyName" required>
+                                       <span ng-show="contactInfoForm.companyName.$error.required" class="help-inline">
+                                         Required</span>
+                                       <span ng-show="contactInfoForm.companyName.$error.maxlength" class="help-inline">
+                                          Too Long </span>
+                                </div>
+                            </div>
+
+                            <div class="control-group" ng-class="{error: contactInfoForm.jobTitle.$invalid}">
+                                <label class="control-label" ng-i18next="formLabel.jobTitle"></label>
+                                <div class="controls">
+                                    <input name="jobTitle" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.jobTitle" id="jobTitle" required>
+                                      <span ng-show="contactInfoForm.jobTitle.$error.required" class="help-inline">
+                                      Required</span>
+                                      <span ng-show="contactInfoForm.jobTitle.$error.minlength" class="help-inline">
+                                      Too Short </span>
                                 </div>
                             </div>
 
                         </div>
+
+
                   <!--      <button ng-click="toggleState2()" >Toggle</button>-->
                     </tab>
 
@@ -188,15 +280,119 @@
                                               Too Short </span>
                                 </div>
                           </div>
+
+
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
+
+                             <div class="control-group" ng-class="{error: businessDetailsForm.assets.$invalid}">
+                                 <label class="control-label" ng-i18next="formLabel.age"></label>
+                                 <div class="controls">
+                                     <input type="text" id="assets" name="assets"  ng-minlength="3" ng-model="businessDetails.assets" required >
+                                        <span ng-show="businessDetailsForm.assets.$error.required" class="help-inline">
+                                            Required</span>
+                                        <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
+                                              Too Short </span>
+                                 </div>
+                             </div>
                        </div>
-                   </tab>
+
+                     </tab>
 
 
                    <tab heading="4">
 
                        <legend><h4 ng-i18next="[html]formheader.title.4"></h4></legend>
                        <div ng-form="serviceDetailsForm" ng-controller="serviceDetailContoller" class="pull-left">
+                            <!--current supplier checkbox-->
+                           <div class="control-group">
+                               <label class="control-label" ng-i18next="formLabel.isCurrentSupplier"></label>
+                               <div class="controls">
+                                   <input type="checkbox" name="isCurrentSupplier" ng-model="serviceDetails.isCurrentSupplier">
 
+                                   <div ng-show="serviceDetails.isCurrentSupplier" class="control-group">
+                                    <span ng-show="serviceDetails.isCurrentSupplier">Mention 2 projects you have completed with us</span>
+                                   <label class="control-label" ng-i18next="formLabel.isCurrentSupplier"></label>
+                                   <input type="text" name="entity" ng-show="serviceDetails.isCurrentSupplier" ng-minlength="3" ng-model="serviceDetails.entity" required>
+                                   <span ng-show="serviceDetailsForm.entity.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                   <label class="control-label" ng-i18next="formLabel.project1"></label>
+                                   <input type="text" name="project1" ng-show="serviceDetails.isCurrentSupplier"  ng-model="serviceDetails.project1" required >
+                                   <span ng-show="serviceDetailsForm.project1.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                   <label class="control-label" ng-i18next="formLabel.project2"></label>
+                                   <input type="text" name="project2" ng-show="serviceDetails.isCurrentSupplier"  ng-model="serviceDetails.project2" required >
+                                   <span ng-show="serviceDetailsForm.project2.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                   </div>
+                               </div>
+                           </div>
+                <!--products and services-->
                            <div class="control-group" ng-class="{error: serviceDetailsForm.serviceId.$invalid}">
                                <label class="control-label" ng-i18next="formLabel.age"></label>
                                <div class="controls">
@@ -205,6 +401,23 @@
                                 Required</span>
                                <span ng-show="serviceDetailsForm.serviceId.$error.minlength" class="help-inline">
                                    Too Short </span>
+                               </div>
+                           </div>
+                            <!--file upload -->
+                           <div class="control-group">
+                               <label class="control-label" ng-i18next="formLabel.attachments"></label>
+                               <div class="controls">
+                                   <input type="file" name="attachments"  ng-minlength="3" ng-model="serviceDetails.attachments" >
+                               </div>
+                           </div>
+
+                            <!--more-->
+                           <div class="control-group">
+                               <label class="control-label" ng-i18next="formLabel.moreInfo"></label>
+                               <div class="controls">
+                                   <input type="text" name="addtlinfo"  ng-maxlength="400" ng-model="serviceDetails.addtlInfo">
+                                <span ng-show="serviceDetailsForm.serviceId.$error.minlength" class="help-inline">
+                                  Too Long</span>
                                </div>
                            </div>
                        </div>
