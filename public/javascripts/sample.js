@@ -77,7 +77,7 @@ var FormController=function($scope){
         //use this method to validate the contactInfotab
     }
     $scope.companyInfoController=function($scope){
-        //use this method to validate the contactInfotab
+        //use this method to validate the contactInfotab                                 su
         $scope.usage="scope bound to companyInfoController";
         $scope.companyInfoValid=true;
 
@@ -89,10 +89,13 @@ var FormController=function($scope){
         $scope.businessDetailsValid=true;
     }
 
+
     $scope.serviceDetailContoller=function($scope){
         //use this method to validate the contactInfotab
         $scope.usage="bound to business Details controller";
         $scope.serviceDetailsValid=true;
+
+        $scope.user={first :'ameya',last:'kulkarni'};
     }
 
     $scope.toggleState=function(){
