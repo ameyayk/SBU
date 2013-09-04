@@ -80,9 +80,17 @@ body {
     *display:inline; /* ie7 fix */
     zoom:1; /* hasLayout ie7 trigger */
 }
+.ng-pristine[type=input] { border:1px solid Gold; }
+.ng-dirty.ng-valid [input]{ border:1px solid Green; }
+.ng-dirty.ng-invalid[input] { border:1px solid Red; }
+.ng-dirty.ng-valid[input] { color:green; display:inline; }
+.ng-dirty.ng-invalid[input] { color:red; display:inline; }
 
 .nav-tabs, .nav-pills {
     text-align:center;
+}
+.errorMsg{
+       font-color:#287232
 }
 .registerBtn{
     text-align:center;

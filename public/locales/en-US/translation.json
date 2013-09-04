@@ -1,8 +1,12 @@
 {
     "formLabel": {
-        "name": "Name",
-        "age": "Age",
-        "address": "Adress"
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "contactNumber": "Telephone Number",
+        "mobileNumber": "Mobile Number",
+        "emailId": "Email Id",
+        "companyName": "Company Name",
+        "jobTitle": "Job Title"
     },
     "header":{
         "welcome":"Welcome to the XYZ Marketplace,where Buyers meet sellers <br> Please register your organistaion to put it on our map"

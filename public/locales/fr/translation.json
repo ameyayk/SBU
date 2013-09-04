@@ -1,9 +1,13 @@
 {
     "formLabel": {
-        "name": "Nom",
-        "age": "époque",
-        "address": "Adresse"
-    } ,
+        "firstName": "Prénom",
+        "lastName": "Prénom",
+        "contactNumber": "Numéro de téléphone",
+        "mobileNumber": " Contact Numéro",
+        "emailId": "Email Id",
+        "companyName": "Nom de l'entreprise",
+        "jobTitle": "Position"
+    },
     "formheader":{
     "title":{
         "1":"Contact Info",

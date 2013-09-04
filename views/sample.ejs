@@ -70,17 +70,17 @@
 
                         <div ng-form="contactInfoForm" ng-controller="contactInfoController" class="pull-left">
 
-                            <div class="control-group" ng-class="{error: contactInfoForm.firstName.$invalid}">
+                            <div class="control-group"   ng-class="{error: contactInfoForm.firstName.$invalid}">
                                 <label class="control-label" ng-i18next="formLabel.firstName"></label>
 
                                 <div class="controls">
                                     <input name="firstName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.firstName" id="firstName" required>
                                      <span ng-show="contactInfoForm.firstName.$error.required" class="help-inline">
-                                        Required</span>
+                                        *</span>
                                      <span ng-show="contactInfoForm.firstName.$error.maxlength" class="help-inline">
                                         Too Long </span>
                                 </div>
-                            </div>
+                             </div>
 
 
                             <div class="control-group" ng-class="{error: contactInfoForm.lastName.$invalid}">
@@ -88,7 +88,7 @@
                                 <div class="controls">
                                     <input name="lastName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.lastName" id="lastName" required>
                                     <span ng-show="contactInfoForm.lastName.$error.required" class="help-inline">
-                                        Required</span>
+                                        *</span>
                                     <span ng-show="contactInfoForm.lastName.$error.maxlength" class="help-inline">
                                         Too Long </span>
                                 </div>
@@ -100,7 +100,7 @@
                               <div class="controls">
                                   <input name="contactNumber"   type="text" value=""  ng-model="contactInfoForm.poc.contactNumber" id="contactNumber" required>
                                   <span ng-show="contactInfoForm.contactNumber.$error.required" class="help-inline">
-                              Required</span>
+                              *</span>
                               </div>
                           </div>
 
@@ -110,7 +110,7 @@
                               <div class="controls">
                                   <input name="mobileNumber" ng-minlength="5"  type="text" value=""  ng-model="contactInfoForm.poc.mobileNumber" id="mobileNumber" required>
                                            <span ng-show="contactInfoForm.mobileNumber.$error.required" class="help-inline">
-                              Required</span>
+                                            *</span>
 
                               </div>
 
@@ -121,7 +121,9 @@
                                   <div class="controls">
                                       <input name="emailId" ng-minlength="5"  type="email" value=""  ng-model="contactInfoForm.poc.emailId" id="emailId" required>
                                            <span ng-show="contactInfoForm.emailId.$error.required" class="help-inline">
-                                          Required</span>
+                                          *</span>
+                                      <span ng-show="contactInfoForm.emailId.$error.email" class="help-inline">
+                                          Not a valid Email</span>
                                   </div>
                                </div>
 
@@ -132,7 +134,7 @@
                                    <div class="controls">
                                       <input name="companyName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.companyName" id="companyName" required>
                                        <span ng-show="contactInfoForm.companyName.$error.required" class="help-inline">
-                                         Required</span>
+                                         *</span>
                                        <span ng-show="contactInfoForm.companyName.$error.maxlength" class="help-inline">
                                           Too Long </span>
                                   </div>
@@ -143,7 +145,7 @@
                                    <div class="controls">
                                       <input name="jobTitle" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.jobTitle" id="jobTitle" required>
                                       <span ng-show="contactInfoForm.jobTitle.$error.required" class="help-inline">
-                                      Required</span>
+                                      *</span>
                                       <span ng-show="contactInfoForm.jobTitle.$error.minlength" class="help-inline">
                                       Too Short </span>
                                    </div>
@@ -161,14 +163,20 @@
                             <div class="control-group" ng-class="{error: companyInfoForm.companyId.$invalid}">
                                 <label class="control-label" ng-i18next="formLabel.age"></label>
                                         <div class="controls">
-                                    <input name="companyId" ng-minlength="5"  type="text" value=""  ng-model="companyInfo.companyId" id="companyId" required>
+                                    <input name="companyId" ng-minlength="5"  type="text" value="" regex-validate="\bblah\b" regex-validate-flags="i"  ng-model="companyInfo.companyId" id="companyId" required>
                                              <span ng-show="companyInfoForm.companyId.$error.required" class="help-inline">
-                                Required</span>
+                                *</span>
                                <span ng-show="companyInfoForm.companyId.$error.minlength" class="help-inline">
                                    Too Short </span>
+
                                 </div>
+                                <span style="color:red" ng-show="myForm.test.$error.regexValidate">WRONG!</span>
                             </div>
 
+
+                            <input type="text" placeholder="Enter text here"
+                                   ng-model="test" name="test" regex-validate="\bblah\b" regex-validate-flags="i"/>
+                            <span style="color:red" ng-show="companyInfoForm.companyId.$error.regexValidate">WRONG!</span>
                         </div>
                   <!--      <button ng-click="toggleState2()" >Toggle</button>-->
                     </tab>

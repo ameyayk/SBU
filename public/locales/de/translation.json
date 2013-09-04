@@ -1,8 +1,12 @@
 {
     "formLabel": {
-        "name": "Persönlichkeit",
-        "age": "Alter",
-        "address": "Adressieren"
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "contactNumber": "Rufnummer",
+        "mobileNumber": "Kontakt-Telefon",
+        "emailId": "Email Id",
+        "companyName": "Name des Unternehmens",
+        "jobTitle": "Position"
     },
     "formheader":{
             "title":{
