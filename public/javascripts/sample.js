@@ -125,6 +125,7 @@ var FormController=function($scope){
         //use this method to validate the contactInfotab                                 su
         $scope.usage="scope bound to companyInfoController";
         $scope.companyInfoValid=true;
+        $scope.optionSource = ['Option1', 'Option2', 'Option3', 'Option4'];
 
     }
 
@@ -141,6 +142,8 @@ var FormController=function($scope){
         $scope.serviceDetailsValid=true;
 
         $scope.user={first :'ameya',last:'kulkarni'};
+
+
     }
 
     $scope.toggleState=function(){

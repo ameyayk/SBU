@@ -118,7 +118,18 @@ body {
     padding: 14px 24px;
 }
 
+.input.ng-pristine .ng-invalid{
+       border-color: red;
+}
+.input.ng-pristine .ng-valid{
 
+}
+.input.ng-dirty .ng-valid{
+
+}
+.input.ng-dirty .ng-invalid{
+
+}
 
 /* Supporting marketing content */
 .marketing {

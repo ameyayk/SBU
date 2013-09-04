@@ -1,4 +1,4 @@
-angular.module("Supplier",{})
+var app=angular.module("Supplier",{})
 angular.module('Supplier',['ui.bootstrap','jm.i18next']);
 angular.module('jm.i18next').config(function ($i18nextProvider) {
 

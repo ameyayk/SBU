@@ -109,9 +109,11 @@
                                         <label class="control-label" ng-i18next="formLabel.contactNumber"></label>
                                         <div class="control-group" ng-class="{error: contactInfoForm.contactNumber.$invalid}">
                                             <div class="controls form-inline">
-                                                <input name="contactNumber"   type="text" value=""  ng-model="contactInfoForm.poc.contactNumber" id="contactNumber" required>
+                                                <input name="contactNumber"   type="text" value="" ng-pattern="/^[0-9]+$/"  ng-model="contactInfoForm.poc.contactNumber" id="contactNumber" required>
                                                     <span ng-show="contactInfoForm.contactNumber.$error.required" class="help-inline">
                                                     *</span>
+                                                    <span ng-show="contactInfoForm.contactNumber.$error.pattern" class="help-inline">
+                                                    Enter Valid Number</span>
                                              </div>
                                         </div>
                                     </div>
@@ -120,10 +122,11 @@
                                         <label class="control-label" ng-i18next="formLabel.mobileNumber"></label>
                                             <div class="control-group" ng-class="{error: contactInfoForm.mobileNumber.$invalid}">
                                              <div class="controls">
-                                                    <input name="mobileNumber" ng-minlength="5"  type="text" value=""  ng-model="contactInfoForm.poc.mobileNumber" id="mobileNumber" required>
+                                                    <input name="mobileNumber" ng-minlength="5"  type="text" value="" ng-pattern="/^[0-9]+$/"   ng-model="contactInfoForm.poc.mobileNumber" id="mobileNumber" required>
                                                    <span ng-show="contactInfoForm.mobileNumber.$error.required" class="help-inline">
                                                     *</span>
-
+                                                    <span ng-show="contactInfoForm.mobileNumber.$error.pattern" class="help-inline">
+                                                    Enter Valid Number</span>
                                             </div>
 
                                      </div>
@@ -142,7 +145,8 @@
                                         </div>
                                     </div>
 
-                                     <div>
+
+                                    <div>
 
                                         <label class="control-label" ng-i18next="formLabel.companyName"></label>
                                          <div class="control-group" ng-class="{error: contactInfoForm.companyName.$invalid}">
@@ -205,6 +209,7 @@
                                             Required</span>
                                         <span ng-show="businessDetailsForm.assets.$error.minlength" class="help-inline">
                                               Too Short </span>
+                                            <span style="color:red" ng-show="businessDetailsForm.assets.$error.regexValidate">WRONG!</span>
                                         </div>
                                     </div>
                                 </div>
@@ -214,11 +219,36 @@
                             <tab heading="4">
 
                                 <legend><h4 ng-i18next="[html]formheader.title.4"></h4></legend>
-                                <div ng-form="serviceDetailsForm" ng-controller="serviceDetailContoller" class="pull-left">
+                                <div ng-form="serviceDetailsForm" ng-controller="serviceDetailContoller" class="form-horizontal">
+                                    <div class="control-group">
+                                        <label class="control-label" ng-i18next="formLabel.isCurrentSupplier"></label>
+                                        <div class="controls">
+                                            <input type="checkbox" name="isCurrentSupplier" ng-model="serviceDetails.isCurrentSupplier">
 
+                                            <div ng-show="serviceDetails.isCurrentSupplier" class="control-group">
+                                                <span ng-show="serviceDetails.isCurrentSupplier">Mention 2 projects you have completed with us</span>
+                                                <label class="control-label" ng-i18next="formLabel.isCurrentSupplier"></label>
+                                                <input type="text" name="entity" ng-show="serviceDetails.isCurrentSupplier" ng-minlength="3" ng-model="serviceDetails.entity" required>
+                                   <span ng-show="serviceDetailsForm.entity.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                                <label class="control-label" ng-i18next="formLabel.project1"></label>
+                                                <input type="text" name="project1" ng-show="serviceDetails.isCurrentSupplier"  ng-model="serviceDetails.project1" required >
+                                   <span ng-show="serviceDetailsForm.project1.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                                <label class="control-label" ng-i18next="formLabel.project2"></label>
+                                                <input type="text" name="project2" ng-show="serviceDetails.isCurrentSupplier"  ng-model="serviceDetails.project2" required >
+                                   <span ng-show="serviceDetailsForm.project2.$error.required && serviceDetails.isCurrentSupplier" class="help-inline">
+                                Required</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--products and services-->
                                     <div class="control-group" ng-class="{error: serviceDetailsForm.serviceId.$invalid}">
                                         <label class="control-label" ng-i18next="formLabel.age"></label>
                                         <div class="controls">
+
+                                            <select multiple="multiple" ng-model="value" ng-options="option for option in optionSource"></select>
+
                                             <input type="text" name="serviceId"  ng-minlength="3" ng-model="serviceDetails.serviceId" required >
                                 <span ng-show="serviceDetailsForm.serviceId.$error.required" class="help-inline">
                                 Required</span>
@@ -226,9 +256,28 @@
                                    Too Short </span>
                                         </div>
                                     </div>
+                                    <!--file upload -->
+                                    <div class="control-group">
+                                        <label class="control-label" ng-i18next="formLabel.attachments"></label>
+                                        <div class="controls">
+                                            <input type="file" name="attachments"  ng-minlength="3" ng-model="serviceDetails.attachments" >
+                                        </div>
+                                    </div>
+
+                                    <!--more-->
+                                    <div class="control-group">
+                                        <label class="control-label" ng-i18next="formLabel.moreInfo"></label>
+                                        <div class="controls">
+                                            <input type="text" name="addtlinfo"  ng-maxlength="400" ng-model="serviceDetails.addtlInfo">
+                                <span ng-show="serviceDetailsForm.serviceId.$error.minlength" class="help-inline">
+                                  Too Long</span>
+                                        </div>
+                                    </div>
+
+
+
+
                                 </div>
-
-
                             </tab>
 
                         </tabset>

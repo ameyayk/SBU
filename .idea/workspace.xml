@@ -6,16 +6,16 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/package.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891584996" ignored="false" />
     <file path="/app.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1377583982148" ignored="false" />
-    <file path="/supplier.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378217351208" ignored="false" />
+    <file path="/supplier.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378299418002" ignored="false" />
     <file path="/buyer.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891945109" ignored="false" />
     <file path="/index.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891993213" ignored="false" />
     <file path="/index.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376892110478" ignored="false" />
     <file path="/a.dummy" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1377587405780" ignored="false" />
-    <file path="/supplier.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1377762952984" ignored="false" />
+    <file path="/supplier.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378296855496" ignored="false" />
     <file path="/translation.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378209100530" ignored="false" />
     <file path="/transalation.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376906405389" ignored="false" />
-    <file path="/style.css" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378210870073" ignored="false" />
-    <file path="/sample.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378214874651" ignored="false" />
+    <file path="/style.css" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378297084726" ignored="false" />
+    <file path="/sample.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378299281687" ignored="false" />
     <file path="/sample.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378218534632" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,22 +36,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sample.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sample.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/sample.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="99" selection-start="8094" selection-end="8094" vertical-scroll-proportion="-49.125">
+            <state line="185" column="68" selection-start="11089" selection-end="11089" vertical-scroll-proportion="0.7025797">
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supplier.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="104" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supplier.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="89" selection-start="4671" selection-end="4671" vertical-scroll-proportion="0.5263158">
+            <state line="249" column="38" selection-start="16451" selection-end="16558" vertical-scroll-proportion="-1.875">
+              <folding>
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supplier.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,7 +80,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="18" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
+            <state line="118" column="95" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,19 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/locales/fr/translation.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sample.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/sample.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="59" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+            <state line="127" column="75" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,13 +147,13 @@
         <option value="$PROJECT_DIR$/routes/supplier.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/buyer.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/supplier.js" />
         <option value="$PROJECT_DIR$/public/locales/fr/translation.json" />
         <option value="$PROJECT_DIR$/public/locales/dev/translation.json" />
         <option value="$PROJECT_DIR$/public/locales/en-US/translation.json" />
         <option value="$PROJECT_DIR$/public/locales/en/translation.json" />
         <option value="$PROJECT_DIR$/public/locales/de/translation.json" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/supplier.js" />
         <option value="$PROJECT_DIR$/views/supplier.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/sample.js" />
         <option value="$PROJECT_DIR$/views/sample.ejs" />
@@ -537,11 +548,6 @@
         <state line="9" column="23" selection-start="180" selection-end="180" vertical-scroll-proportion="0.18723994" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="10" selection-start="782" selection-end="782" vertical-scroll-proportion="0.66574204" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="23" selection-start="0" selection-end="9714" vertical-scroll-proportion="0.33287102">
@@ -561,23 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/locales/fr/translation.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/locales/dev/translation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
@@ -596,6 +588,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/locales/dev/translation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="104" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/locales/de/translation.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="-5.0">
@@ -605,32 +611,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="18" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
+        <state line="118" column="95" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="38" selection-start="16451" selection-end="16558" vertical-scroll-proportion="-1.875">
+          <folding>
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/sample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="59" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+        <state line="127" column="75" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sample.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="99" selection-start="8094" selection-end="8094" vertical-scroll-proportion="-49.125">
+        <state line="185" column="68" selection-start="11089" selection-end="11089" vertical-scroll-proportion="0.7025797">
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="89" selection-start="4671" selection-end="4671" vertical-scroll-proportion="0.5263158">
-          <folding />
         </state>
       </provider>
     </entry>
