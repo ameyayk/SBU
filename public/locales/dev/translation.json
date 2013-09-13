@@ -6,7 +6,9 @@
         "mobileNumber": "Mobile Number",
         "emailId": "Email Id",
         "companyName": "Company Name",
-        "jobTitle": "Job Title"
+        "jobTitle": "Job Title" ,
+        "2projectsInfo":"Mention 2 projects you have done with us",
+        "isCurrentSupplier":"Current Supplier with us?"
     },
     "formheader":{
         "title":{
@@ -18,5 +20,11 @@
         },
     "header":{
         "welcome":"Welcome to the XYZ Marketplace ,where Buyers meet sellers<br> Please register your organistaion to put it on our map"
+    },
+    "validation":{
+        "required" :"required",
+        "maxlength":"Too Long",
+        "minLength":"Too Short",
+        "email":"Invalid Email"
     }
 }

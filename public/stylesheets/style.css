@@ -117,6 +117,14 @@ body {
     font-size: 21px;
     padding: 14px 24px;
 }
+.form-horizontal .control-label{
+    text-align: left;
+
+}
+ul
+{
+    list-style-type: none;
+}
 
 .input.ng-pristine .ng-invalid{
        border-color: red;
@@ -129,6 +137,12 @@ body {
 }
 .input.ng-dirty .ng-invalid{
 
+}
+.nav-tabs  {
+    text-align: left;
+}
+.ul .nav nav-tabs{
+    text-align:center;
 }
 
 /* Supporting marketing content */

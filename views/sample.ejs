@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="Supplier">
+<html ng-app="upload">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -61,7 +61,8 @@
 
           </div>
         <!--tabs-->
-         <div class="formClass" >
+         <div class="span6" >
+         <fieldset>
       <form name="supplierRegistrationForm" class="form-horizontal" novalidate ng-controller="FormController">
               <div>
                 <tabset class="nav nav-tabs">
@@ -70,7 +71,7 @@
 
                         <div ng-form="contactInfoForm" ng-controller="contactInfoController" class="pull-left">
 
-                            <div class="control-group"   ng-class="{error: contactInfoForm.firstName.$invalid}">
+                            <div class="control-group"   >
                                 <label class="control-label" ng-i18next="formLabel.firstName"></label>
 
                                 <div class="controls">
@@ -83,7 +84,7 @@
                              </div>
 
 
-                            <div class="control-group" ng-class="{error: contactInfoForm.lastName.$invalid}">
+                            <div class="control-group" >
                                 <label class="control-label" ng-i18next="formLabel.lastName"></label>
                                 <div class="controls">
                                     <input name="lastName" ng-maxlength="120"  type="text" value=""  ng-model="contactInfoForm.poc.lastName" id="lastName" required>
@@ -95,7 +96,7 @@
                             </div>
 
 
-                          <div class="control-group" ng-class="{error: contactInfoForm.contactNumber.$invalid}">
+                          <div class="control-group">
                               <label class="control-label" ng-i18next="formLabel.contactNumber"></label>
                               <div class="controls">
                                   <input name="contactNumber"   type="text" value=""  ng-model="contactInfoForm.poc.contactNumber" id="contactNumber" required>
@@ -105,7 +106,7 @@
                           </div>
 
 
-                          <div class="control-group" ng-class="{error: contactInfoForm.mobileNumber.$invalid}">
+                          <div class="control-group">
                               <label class="control-label" ng-i18next="formLabel.mobileNumber"></label>
                               <div class="controls">
                                   <input name="mobileNumber" ng-minlength="5"  type="text" value=""  ng-model="contactInfoForm.poc.mobileNumber" id="mobileNumber" required>
@@ -116,7 +117,7 @@
 
                            </div>
 
-                          <div class="control-group" ng-class="{error: contactInfoForm.emailId.$invalid}">
+                          <div class="control-group">
                                   <label class="control-label" ng-i18next="formLabel.emailId"></label>
                                   <div class="controls">
                                       <input name="emailId" ng-minlength="5"  type="email" value=""  ng-model="contactInfoForm.poc.emailId" id="emailId" required>
@@ -156,13 +157,13 @@
 
                      </tab>
 
-
+                       <!--
                      <tab heading="2">
                         <legend><h4 ng-i18next="[html]formheader.title.2"></h4></legend>
                         <div ng-form="companyInfoForm"  ng-controller="companyInfoController" class="pull-left">
 
 
-                            <div class="control-group" ng-class="{error: companyInfoForm.companyId.$invalid}">
+                            <div class="control-group" >
                                 <label class="control-label" ng-i18next="formLabel.age11"></label>
                                         <div class="controls">
                                     <input name="companyId" ng-minlength="5"  type="text" value="" ng-pattern="/^[0-9]+$/" ng-model="companyInfo.companyId" id="companyId">
@@ -283,7 +284,7 @@
                             <span style="color:red" ng-show="companyInfoForm.companyId.$error.regexValidate">WRONG!</span>
 
 
-                  <!--      <button ng-click="toggleState2()" >Toggle</button>-->
+                  <!--      <button ng-click="toggleState2()" >Toggle</button>
                     </tab>
 
                      <tab heading="3">
@@ -390,7 +391,7 @@
 
                        <legend><h4 ng-i18next="[html]formheader.title.4"></h4></legend>
                        <div ng-form="serviceDetailsForm" ng-controller="serviceDetailContoller" class="pull-left">
-                            <!--current supplier checkbox-->
+                            <!--current supplier checkbox
                            <div class="control-group">
                                <label class="control-label" ng-i18next="formLabel.isCurrentSupplier"></label>
                                <div class="controls">
@@ -413,7 +414,7 @@
                                    </div>
                                </div>
                            </div>
-                <!--products and services-->
+                <!--products and services
                            <div class="control-group" ng-class="{error: serviceDetailsForm.serviceId.$invalid}">
                                <label class="control-label" ng-i18next="formLabel.age"></label>
                                <div class="controls">
@@ -424,7 +425,7 @@
                                    Too Short </span>
                                </div>
                            </div>
-                            <!--file upload -->
+                            <!--file upload
                            <div class="control-group">
                                <label class="control-label" ng-i18next="formLabel.attachments"></label>
                                <div class="controls">
@@ -450,7 +451,7 @@
                        <label class="requiredLabel" for="password">Password</label>
                        <input class="span3" placeholder="Enter password" type="password" id="password" name="password" required data-ng-model="model.password">
                        <div class="text-error" data-ng-show="loginForm.password.$error.required && loginForm.$dirty">Password is required</div>
-
+                                -->
 
                     </tab>
 
@@ -462,11 +463,18 @@
                 <!--<button ng-model="isDisabled"  ng-disabled="!isDisabled" ng-click="register()" class="btn btnPrimary">Register</button>          -->
                 </div>
             </form>
-
+               </fieldset>
 
             </div>
         </div>
        </div>
   </div>
+
+<div ng-controller="UploadCtrl">
+    <input type="file" multiple ng-model="files" file-change>
+    <br><br>
+    Selected: {{ files.length }}
+</div>
+
 </body>
 </html>

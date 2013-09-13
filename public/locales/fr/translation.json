@@ -6,7 +6,10 @@
         "mobileNumber": " Contact Numéro",
         "emailId": "Email Id",
         "companyName": "Nom de l'entreprise",
-        "jobTitle": "Position"
+        "jobTitle": "Position",
+        "2projectsInfo":"Mention 2 projects you have done with us",
+        "isCurrentSupplier":"Current Supplier with us?"
+
     },
     "formheader":{
     "title":{
@@ -18,5 +21,11 @@
     },
 "header":{
         "welcome":"Bienvenue au marché XYZ où les acheteurs se rencontrent vendeurs.<br>S'il vous plaît inscrivez votre organistaion de le mettre sur notre carte"
+    },
+   "validation":{
+        "required" :"required",
+        "maxlength":"Too Long",
+        "minLength":"Too Short",
+        "email":"Invalid Email"
     }
 }

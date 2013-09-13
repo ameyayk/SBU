@@ -6,17 +6,18 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/package.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891584996" ignored="false" />
     <file path="/app.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1377583982148" ignored="false" />
-    <file path="/supplier.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378299418002" ignored="false" />
+    <file path="/supplier.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379084658991" ignored="false" />
     <file path="/buyer.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891945109" ignored="false" />
     <file path="/index.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376891993213" ignored="false" />
     <file path="/index.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376892110478" ignored="false" />
-    <file path="/a.dummy" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1377587405780" ignored="false" />
-    <file path="/supplier.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378296855496" ignored="false" />
-    <file path="/translation.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378209100530" ignored="false" />
+    <file path="/a.dummy" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379081690037" ignored="false" />
+    <file path="/supplier.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379084488696" ignored="false" />
+    <file path="/translation.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379081858930" ignored="false" />
     <file path="/transalation.json" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1376906405389" ignored="false" />
-    <file path="/style.css" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378297084726" ignored="false" />
-    <file path="/sample.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378299281687" ignored="false" />
+    <file path="/style.css" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379070470453" ignored="false" />
+    <file path="/sample.ejs" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379069109416" ignored="false" />
     <file path="/sample.js" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1378218534632" ignored="false" />
+    <file path="/*.regexp" changelist="64e76b6b-7084-47cd-b59c-a498a1980393" time="1379073895864" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sample.ejs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/sample.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="68" selection-start="11089" selection-end="11089" vertical-scroll-proportion="0.7025797">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,12 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supplier.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="supplier.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="38" selection-start="16451" selection-end="16558" vertical-scroll-proportion="-1.875">
+            <state line="17" column="40" selection-start="771" selection-end="771" vertical-scroll-proportion="0.18209408">
               <folding>
-                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#fieldset#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,25 +60,16 @@
       <file leaf-file-name="supplier.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="177" column="1" selection-start="5342" selection-end="5342" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <file leaf-file-name="sample.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/sample.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="95" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/locales/de/translation.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="-5.0">
+            <state line="1" column="20" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -98,25 +78,16 @@
       <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/locales/dev/translation.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
+            <state line="22" column="42" selection-start="765" selection-end="765" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/locales/en-US/translation.json">
+        <entry file="file://$PROJECT_DIR$/public/locales/de/translation.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/locales/en/translation.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="444" selection-end="444" vertical-scroll-proportion="-10.625">
+            <state line="10" column="29" selection-start="374" selection-end="374" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -125,7 +96,34 @@
       <file leaf-file-name="sample.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/sample.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="75" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0">
+            <state line="27" column="70" selection-start="0" selection-end="5408" vertical-scroll-proportion="-14.464286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/locales/en-US/translation.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="29" selection-start="376" selection-end="376" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/locales/en/translation.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="29" selection-start="375" selection-end="375" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translation.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/locales/fr/translation.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="37" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -147,16 +145,16 @@
         <option value="$PROJECT_DIR$/routes/supplier.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/buyer.ejs" />
-        <option value="$PROJECT_DIR$/public/locales/fr/translation.json" />
-        <option value="$PROJECT_DIR$/public/locales/dev/translation.json" />
-        <option value="$PROJECT_DIR$/public/locales/en-US/translation.json" />
-        <option value="$PROJECT_DIR$/public/locales/en/translation.json" />
-        <option value="$PROJECT_DIR$/public/locales/de/translation.json" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/locales/fr/translation.json" />
+        <option value="$PROJECT_DIR$/public/locales/en/translation.json" />
+        <option value="$PROJECT_DIR$/public/locales/en-US/translation.json" />
+        <option value="$PROJECT_DIR$/public/locales/de/translation.json" />
+        <option value="$PROJECT_DIR$/public/locales/dev/translation.json" />
+        <option value="$PROJECT_DIR$/views/sample.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/sample.js" />
         <option value="$PROJECT_DIR$/public/javascripts/supplier.js" />
         <option value="$PROJECT_DIR$/views/supplier.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/sample.js" />
-        <option value="$PROJECT_DIR$/views/sample.ejs" />
       </list>
     </option>
   </component>
@@ -376,9 +374,9 @@
     <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -459,8 +457,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.032310177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13377483" sideWeight="0.9676898" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13377483" sideWeight="0.6724368" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -469,7 +468,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288948" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -567,30 +565,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/locales/fr/translation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="-6.25">
+        <state line="10" column="37" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/locales/en-US/translation.json">
+    <entry file="file://$PROJECT_DIR$/public/locales/de/translation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/locales/en/translation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="444" selection-end="444" vertical-scroll-proportion="-10.625">
+        <state line="10" column="29" selection-start="374" selection-end="374" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/locales/dev/translation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.375">
+        <state line="22" column="42" selection-start="765" selection-end="765" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/locales/en-US/translation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="376" selection-end="376" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
@@ -602,49 +607,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/locales/de/translation.json">
+    <entry file="file://$PROJECT_DIR$/public/locales/en/translation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="274" selection-end="274" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="95" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="38" selection-start="16451" selection-end="16558" vertical-scroll-proportion="-1.875">
-          <folding>
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/sample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="75" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0">
+        <state line="10" column="29" selection-start="375" selection-end="375" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sample.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="68" selection-start="11089" selection-end="11089" vertical-scroll-proportion="0.7025797">
+        <state line="1" column="20" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="70" selection-start="0" selection-end="5408" vertical-scroll-proportion="-14.464286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/supplier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="1" selection-start="5342" selection-end="5342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/supplier.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="771" selection-end="771" vertical-scroll-proportion="0.18209408">
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#8;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#1;n#tabset#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#tab#2;n#tabset#0;n#div#0;n#form#0;n#fieldset#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
